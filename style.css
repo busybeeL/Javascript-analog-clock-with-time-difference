@@ -1,0 +1,82 @@
+/* Layout */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: middle;
+}
+
+.clockbox, #clock 
+{
+    width: 100%;
+}
+
+/* Clock styles */
+.circle {
+    fill: none;
+    stroke: #333;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+}
+
+.mid-circle {
+    fill: #333;
+}
+.hour-marks {
+    fill: none;
+    stroke: #333;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+}
+
+.hour-arm {
+    fill: none;
+    stroke: #999;
+    stroke-width: 10;
+    stroke-miterlimit: 10;
+}
+
+.minute-arm {
+    fill: none;
+    stroke: #666;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.second-arm {
+    fill: none;
+    stroke: #333;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+}
+
+/* Make all arms rotate around the same center point. */
+/* Optional: Use transition for animation. */
+#hour,
+#minute,
+#second {
+    transform-origin: 300px 300px;
+}
+
+/* Buttons position */
+.btnWrapper {
+    text-align: center;
+}
+.btnWrapper input[type="button"] {
+    border: 1px solid #000;
+    padding: 5px 10px;
+    margin-right: 13px;
+}
+.btnWrapper input[type="button"]:hover {
+    font-weight:bold;
+    background: #d8d8d8;
+}
+
+.btnWrapper input:last-child {
+    margin-right: 0;
+}
+
+.btnWrapper input:focus {
+    outline: none;
+    background: #d8d8d8;
+    font-weight: bold;
+}
